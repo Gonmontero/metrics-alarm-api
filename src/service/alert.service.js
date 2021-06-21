@@ -60,7 +60,7 @@ class AlertService {
                 var result = delayEvaluated.diffNow()
                 if (result.milliseconds > 0) {
                     var error = `La metrica ${name} no se ha informado en los ultimos ${maxDelay} minutos`
-                    this.#notify(delayedAlerts[key], errors)
+                    this.#notify(delayedAlerts[key], error)
 
                     mutedAlert.setNextExecution(DateTime.fromISO(muteRange[index].to), frecuence)
                         
