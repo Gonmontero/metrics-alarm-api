@@ -37,7 +37,7 @@ class AlertService {
 
         var errors = this.#processMetrics(alert, metrics)
 
-        //this.#notify(alert, errors)
+        this.#notify(alert, errors)
 
         var { frecuence } = alert;
 

@@ -1,5 +1,5 @@
 module.exports = function ({ AlertService }) {
-    const expression = "0/15 * * * * *";
+    const expression = "* * * * *";
     const task =  () => {
         AlertService.processDelayedMetrics()
     }
