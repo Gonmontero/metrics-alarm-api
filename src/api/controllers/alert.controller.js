@@ -8,9 +8,10 @@ class AlertController {
         try {
             const alert = await this._alertService.createAlert(body)
 
-            return res.send(
-                alert
-            );
+            return res.send({
+                id: alert.id,
+                name: alert.name
+            });
         } catch (err) {
             return res.status(500).send({
                 result: err.message
