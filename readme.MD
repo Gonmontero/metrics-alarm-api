@@ -119,7 +119,7 @@ unless its during Mute Time or during the max delay permitted
 
  ### Evaluate Metrics Example
 
-    POST http://localhost:8080/api/alert/60d05ca5ec7df70a803f7fb5/metrics
+    POST http://localhost:8080/api/alert/60d05ca5ec7df70a803f7fb5/metric
 
     {
     	"metrics":[
